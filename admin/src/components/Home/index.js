@@ -42,7 +42,7 @@ const Home = () => {
         >
           <Box>
             <Grid gap={4}>
-              <GridItem col={4} s={12}>
+              <GridItem col={6} s={12}>
                 <Link
                   to="/settings/strapi-google-translate"
                   endIcon={<ArrowRight />}
@@ -50,14 +50,9 @@ const Home = () => {
                   Manage Your Translator Configuration
                 </Link>
               </GridItem>
-              <GridItem col={4} s={12}>
-                <Typography variant="pi">
+              <GridItem col={6} s={12}>
+                <Typography>
                   Plugin version:&nbsp;{pluginPkg.version}
-                </Typography>
-              </GridItem>
-              <GridItem col={4} s={12}>
-                <Typography variant="pi">
-                  Have questions? Contact us at support@asyncweb.io
                 </Typography>
               </GridItem>
             </Grid>
@@ -96,6 +91,27 @@ const Home = () => {
               click on Edit &gt; click on Advanced Settings &gt; Check Enable
               localization for this Content-Type.
             </Typography>
+          </Box>
+        </Box>
+      </Box>
+      <Box paddingTop={6} paddingBottom={6} paddingLeft={7} paddingRight={7}>
+        <Box
+          shadow="tableShadow"
+          background="neutral0"
+          paddingTop={6}
+          paddingLeft={7}
+          paddingRight={7}
+          paddingBottom={6}
+          hasRadius
+        >
+          <Box>
+            <Grid gap={4}>
+              <GridItem col={4} s={12}>
+                <Typography>
+                  Have questions? Contact us at : support@asyncweb.io
+                </Typography>
+              </GridItem>
+            </Grid>
           </Box>
         </Box>
       </Box>
