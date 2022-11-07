@@ -94,7 +94,7 @@ Goto config &gt; `plugins.js` &gt; add the following code snippet.
 
 ```
 module.exports = ({ env }) => ({
-  // ...
+
   "strapi-google-translator": {
     enabled: true,
     config: {
