@@ -4,11 +4,11 @@
 <br />
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/strapi-google-translate">
-<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/manishkatyan/strapi-google-translate?label=npm&logo=npm">
+  <a href="https://www.npmjs.com/package/strapi-google-translator">
+<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/manishkatyan/strapi-google-translator?label=npm&logo=npm">
 </a>
-<a href="https://www.npmjs.org/package/strapi-google-translate">
-<img src="https://img.shields.io/npm/dm/strapi-google-translate.svg" alt="Monthly download on NPM" />
+<a href="https://www.npmjs.org/package/strapi-google-translator">
+<img src="https://img.shields.io/npm/dm/strapi-google-translator.svg" alt="Monthly download on NPM" />
 </a>
 
 </p>
@@ -88,6 +88,24 @@ GOOGLE_TRANSLATE_JSON={"type":"service_account","project_id":"your project_id","
 > Please make sure to add your google translate json in one line as shown above.
 
 > Also to create strapi api token, Go to settingd &gt; API Tokens &gt; Create new Api Tokens &gt; enter api name, select token duration `Unlimited` , select Token type `Full Access` &gt; save &gt; copy the api token and add in your `.env` file.
+
+After adding enviornment variables `.env` files.
+Goto config &gt; `plugins.js` &gt; add the following code snippet.
+
+```
+module.exports = ({ env }) => ({
+
+  "strapi-google-translator": {
+    enabled: true,
+    config: {
+      backendUrl: env("STRAPI_BACKEND_URL"),
+      apiToken: env("STRAPI_GOOGLE_TRANSLATE_API_TOKEN"),
+      googleJson: env("GOOGLE_TRANSLATE_JSON"),
+    },
+  },
+});
+
+```
 
 After you would need to build a fresh package that includes the Google Translate plugin UI. Execute the commands below:
 
