@@ -23,7 +23,7 @@ module.exports = ({ strapi }) => ({
               const data = component[objKey];
               for (const innerObj of data) {
                 const respone = await strapi
-                  .plugin("strapi-google-translate")
+                  .plugin("strapi-google-translator")
                   .service("translateService")
                   .getTranslatableData(innerObj);
 
@@ -39,7 +39,7 @@ module.exports = ({ strapi }) => ({
               typeof component[objKey] === "object"
             ) {
               const respone = await strapi
-                .plugin("strapi-google-translate")
+                .plugin("strapi-google-translator")
                 .service("translateService")
                 .getTranslatableData(component[objKey]);
 
@@ -67,7 +67,7 @@ module.exports = ({ strapi }) => ({
             const innerArray = [];
             for (const innerObj of data[key]) {
               const respone = await strapi
-                .plugin("strapi-google-translate")
+                .plugin("strapi-google-translator")
                 .service("translateService")
                 .getTranslatableData(innerObj);
 
@@ -80,7 +80,7 @@ module.exports = ({ strapi }) => ({
           // checking if the child component is an object
           else if (data[key] && typeof data[key] === "object") {
             newObject[key] = await strapi
-              .plugin("strapi-google-translate")
+              .plugin("strapi-google-translator")
               .service("translateService")
               .getTranslatableData(data[key]);
           } else {

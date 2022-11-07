@@ -229,7 +229,7 @@ const Setting = () => {
     <Main>
       <SettingsPageTitle name="Translator" />
       <HeaderLayout
-        title="Translate Configuration"
+        title="Translator Configuration"
         primaryAction={
           <Button
             type="submit"
@@ -252,7 +252,7 @@ const Setting = () => {
               <Box paddingBottom={4}>
                 <Alert
                   closeLabel="Close alert"
-                  title="Translate configuration"
+                  title="Translator configuration"
                   variant="success"
                   onClose={() => {
                     setShowAlert(false);

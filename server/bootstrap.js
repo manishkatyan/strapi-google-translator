@@ -5,14 +5,14 @@ module.exports = async ({ strapi }) => {
   const resultCollection = await strapi.api;
 
   const content = await strapi
-    .plugin("strapi-google-translate")
+    .plugin("strapi-google-translator")
     .service("settingService")
     .getContentTypes(resultCollection, "contentType");
 
   const resultComponent = await strapi.components;
 
   const component = await strapi
-    .plugin("strapi-google-translate")
+    .plugin("strapi-google-translator")
     .service("settingService")
     .getContentTypes(resultComponent, "component");
 
@@ -22,7 +22,7 @@ module.exports = async ({ strapi }) => {
   };
 
   await strapi
-    .plugin("strapi-google-translate")
+    .plugin("strapi-google-translator")
     .service("settingService")
     .saveSetting(data);
 };

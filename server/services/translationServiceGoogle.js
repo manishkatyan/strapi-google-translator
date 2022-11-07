@@ -8,7 +8,7 @@ const { Translate } = require("@google-cloud/translate").v2;
 module.exports = ({ strapi }) => ({
   async initialize(sourceCollectionType) {
     const setting = await strapi
-      .plugin("strapi-google-translate")
+      .plugin("strapi-google-translator")
       .service("settingService")
       .getSetting();
 
@@ -35,7 +35,7 @@ module.exports = ({ strapi }) => ({
   ) {
     try {
       const { googleJson } = await strapi.config.get(
-        "plugin.strapi-google-translate"
+        "plugin.strapi-google-translator"
       );
       const googleEnv = JSON.parse(googleJson);
 
@@ -183,7 +183,7 @@ module.exports = ({ strapi }) => ({
     let result;
     if (componentType) {
       result = await strapi
-        .plugin("strapi-google-translate")
+        .plugin("strapi-google-translator")
         .service("skipComponent")
         .doSkipComponent(data);
     } else if (Array.isArray(data)) {
@@ -199,34 +199,34 @@ module.exports = ({ strapi }) => ({
   preProcessGlossary(data, glossaries) {
     let replaceString = data;
     let regex;
+    if (glossaries) {
+      for (let i = 0; i < glossaries.length; i++) {
+        regex = new RegExp("\\b" + glossaries[i] + "\\b", "ig");
 
-    for (let i = 0; i < glossaries.length; i++) {
-      regex = new RegExp("\\b" + glossaries[i] + "\\b", "ig");
+        replaceString = replaceString.replace(
+          regex,
+          `<span translate="no">${glossaries[i]}</span>`
+        );
+      }
 
+      const codeRegx = /^```(?:)\n([\s\S]*?)```$/gm;
       replaceString = replaceString.replace(
-        regex,
-        `<span translate="no">${glossaries[i]}</span>`
+        codeRegx,
+        (data) => `<span translate="no">${data}</span>`
+      );
+
+      const openSquare = /\[/g;
+      replaceString = replaceString.replace(
+        openSquare,
+        (data) => `<span translate="no">${data}</span>`
+      );
+
+      const closeSquare = /\]/g;
+      replaceString = replaceString.replace(
+        closeSquare,
+        (data) => `<span translate="no">${data}</span>`
       );
     }
-
-    const codeRegx = /^```(?:)\n([\s\S]*?)```$/gm;
-    replaceString = replaceString.replace(
-      codeRegx,
-      (data) => `<span translate="no">${data}</span>`
-    );
-
-    const openSquare = /\[/g;
-    replaceString = replaceString.replace(
-      openSquare,
-      (data) => `<span translate="no">${data}</span>`
-    );
-
-    const closeSquare = /\]/g;
-    replaceString = replaceString.replace(
-      closeSquare,
-      (data) => `<span translate="no">${data}</span>`
-    );
-
     return replaceString;
   },
 

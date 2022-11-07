@@ -44,7 +44,7 @@ const Home = () => {
             <Grid gap={4}>
               <GridItem col={6} s={12}>
                 <Link
-                  to="/settings/strapi-google-translate"
+                  to="/settings/strapi-google-translator"
                   endIcon={<ArrowRight />}
                 >
                   Manage Your Translator Configuration

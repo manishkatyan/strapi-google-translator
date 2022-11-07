@@ -92,11 +92,11 @@ module.exports = ({ strapi }) => ({
 
   async initialize() {
     const strapiSetting = await strapi.config.get(
-      "plugin.strapi-google-translate"
+      "plugin.strapi-google-translator"
     );
 
     const translatorSetting = await strapi
-      .plugin("strapi-google-translate")
+      .plugin("strapi-google-translator")
       .service("settingService")
       .getSetting();
 
@@ -129,7 +129,7 @@ module.exports = ({ strapi }) => ({
           translatedData[fieldName] = checkData;
         } else {
           const response = await strapi
-            .plugin("strapi-google-translate")
+            .plugin("strapi-google-translator")
             .service("translationServiceGoogle")
             .doTranslation(
               fieldName,

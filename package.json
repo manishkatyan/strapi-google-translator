@@ -1,12 +1,12 @@
 {
-  "name": "strapi-google-translate",
+  "name": "strapi-google-translator",
   "version": "1.0.0",
-  "description": "This is the description of the plugin.",
+  "description": "Easily translate Strapi collections using Google Cloud Translate. Supports Glossaries, relations and components.",
   "strapi": {
-    "name": "strapi-google-translate",
-    "description": "Description of Strapi Google Translate plugin",
+    "name": "strapi-google-translator",
+    "description": "Easily translate Strapi collections using Google Cloud Translate. Supports Glossaries, relations and components.",
     "kind": "plugin",
-    "displayName": "Strapi Google Translate"
+    "displayName": "Strapi Google Translator"
   },
   "dependencies": {
     "@google-cloud/translate": "^7.0.3",
@@ -14,16 +14,35 @@
     "react-ace": "^10.1.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "AsyncWeb Technology",
+    "email": "support@asyncweb.io"
+  },
+  "homepage": "https://github.com/manishkatyan/strapi-google-translator#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manishkatyan/strapi-google-translator.git"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "AsyncWeb Technology",
+      "email": "support@asyncweb.io"
     }
   ],
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
+  "keywords": [
+    "translator",
+    "translate",
+    "google translator",
+    "google cloud translate",
+    "strapi",
+    "headless CMS",
+    "secure payment",
+    "open-source",
+    "subscribe",
+    "gateway"
+  ],
   "license": "MIT"
 }

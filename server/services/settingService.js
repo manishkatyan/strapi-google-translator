@@ -6,7 +6,7 @@ module.exports = ({ strapi }) => ({
     const pluginStore = strapi.store({
       environment: strapi.config.environment,
       type: "plugin",
-      name: "strapi-google-translate",
+      name: "strapi-google-translator",
     });
     const { contentType, glossary, componentType } = data;
     let contentTypeResponse;
@@ -36,7 +36,7 @@ module.exports = ({ strapi }) => ({
     const pluginStore = strapi.store({
       environment: strapi.config.environment,
       type: "plugin",
-      name: "strapi-google-translate",
+      name: "strapi-google-translator",
     });
 
     const glossary = await pluginStore.get({ key: "glossary" });

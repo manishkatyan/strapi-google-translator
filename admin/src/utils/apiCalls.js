@@ -4,7 +4,7 @@ const axios = instance;
 
 export async function translate(data, token) {
   const response = await axios.post(
-    `/strapi-google-translate/translate/`,
+    `/strapi-google-translator/translate/`,
     data,
     {
       headers: {
@@ -19,13 +19,15 @@ export async function translate(data, token) {
 
 export async function saveTranslateConfiguration(data) {
   const response = await axios.put(
-    `/strapi-google-translate/saveConfiguration`,
+    `/strapi-google-translator/saveConfiguration`,
     data
   );
   return response;
 }
 
 export async function getTranslateConfiguration() {
-  const response = await axios.get("/strapi-google-translate/getConfiguration");
+  const response = await axios.get(
+    "/strapi-google-translator/getConfiguration"
+  );
   return response;
 }

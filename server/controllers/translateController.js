@@ -12,12 +12,12 @@ module.exports = ({ strapi }) => ({
       const token = this.getToken(authorization);
 
       const dataToTranslate = await strapi
-        .plugin("strapi-google-translate")
+        .plugin("strapi-google-translator")
         .service("translateService")
         .getTranslatableData(sourceData);
 
       const response = await strapi
-        .plugin("strapi-google-translate")
+        .plugin("strapi-google-translator")
         .service("translateService")
         .translate(
           langs,

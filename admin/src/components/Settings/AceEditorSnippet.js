@@ -8,7 +8,7 @@ import "ace-builds/src-noconflict/ext-language_tools";
 const AceEditorSnippet = ({ value, handleChangeEditor }) => {
   return (
     <AceEditor
-      placeholder="BigBlueButton Settings"
+      placeholder="Edit glossary"
       mode="javascript"
       theme="monokai"
       name="demoCode"

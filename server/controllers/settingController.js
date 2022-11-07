@@ -5,7 +5,7 @@ module.exports = ({ strapi }) => ({
   async saveSetting(ctx) {
     const data = ctx.request.body;
     const response = await strapi
-      .plugin("strapi-google-translate")
+      .plugin("strapi-google-translator")
       .service("settingService")
       .saveSetting(data);
 
@@ -14,7 +14,7 @@ module.exports = ({ strapi }) => ({
 
   async getSetting(ctx) {
     const response = await strapi
-      .plugin("strapi-google-translate")
+      .plugin("strapi-google-translator")
       .service("settingService")
       .getSetting();
 

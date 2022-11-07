@@ -116,6 +116,7 @@ You can easily configure the Stripe Payments plugin to connect with your Stripe 
 - Click on Save to save the Translator confiiguration.
 
 <br/>
+
 ## 📝 License
 
 [MIT License](LICENSE.md)
