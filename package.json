@@ -1,14 +1,14 @@
 {
-  "name": "strapi-google-translate",
+  "name": "strapi-google-translator",
   "version": "1.0.0",
-  "description": "Translate Strapi collections using Google Cloud Translate",
+  "description": "Easily translate Strapi collections using Google Cloud Translate. Supports Glossaries, relations and components.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manishkatyan/strapi-google-translate.git"
+    "url": "git+https://github.com/manishkatyan/strapi-google-translator.git"
   },
   "keywords": [
     "Strapi",
@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manishkatyan/strapi-google-translate/issues"
+    "url": "https://github.com/manishkatyan/strapi-google-translator/issues"
   },
-  "homepage": "https://github.com/manishkatyan/strapi-google-translate#readme"
+  "homepage": "https://github.com/manishkatyan/strapi-google-translator#readme"
 }
