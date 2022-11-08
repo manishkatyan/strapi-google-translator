@@ -1,5 +1,7 @@
 <h1 align="center">Strapi Translator</h1>
-<p align="center">Easily translate your Strapi collections into multiple languages using Google Cloud Translate. It can easily be extedned to support relations and components.</p>
+<p align="center">Easily translate your Strapi collections into multiple languages using Google Cloud Translate.</p>
+
+<p>This free plugin enables you to translate your content into 100+ languages using Google Cloud Translate. Moeover, you can easily extend this plugin to support relations and components in Strapi.</p>
 
 <br />
 
@@ -29,7 +31,7 @@ Why should you bother translating your content? Well, there are several reasons 
 2. Engage your audience with compelling localization of your content
 3. Deliver seamless user experience with real-time translation
 
-### Google Cloud Translate Benefits:
+### Google Cloud Translate Benefits
 
 - Unparalleled language support: Use machine translation to detect more than one hundred languages, from Afrikaans to Zulu. Build custom models in more than fifty language pairs using our no-code AutoML technology.
 - Best-in-class quality: Google has a rich history of providing translation services to consumers and organizations. Our proven models and tools bring Google’s translation expertise with industry-leading accuracy.
