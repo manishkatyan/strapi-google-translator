@@ -1,3 +1,6 @@
+<div align="center">
+   <img alt="stripe payment title" width="60" src="./static/translator.png">
+</div>
 <h1 align="center">Strapi Translator</h1>
 <p align="center">Easily translate your Strapi content into 100+ languages.</p>
 
@@ -25,7 +28,7 @@
 
 [Google Cloud Translate](https://cloud.google.com/translate) makes your content multilingual with fast, dynamic machine translation.
 
-Why should you bother translating your content? Well, there are several reasons for you to translate your content: 
+Why should you bother translating your content? Well, there are several reasons for you to translate your content:
 
 1. Reach global markets through internationalization of your products
 2. Engage your audience with compelling localization of your content
@@ -60,19 +63,18 @@ Setting up the plugin is super easy and can be completed within 10 minutes.
 
 ### Translation Strategies
 
-Following are the supported translation strategies: 
+Following are the supported translation strategies:
 
 1. String: translated as simple string, Glossary should work
 2. Text: translated as simple string, Glossary should work
 3. HTML: should be transformed to html first, translated and then converted back to markdown. Glossary should work.
-4. Skip: should be skipped for translation, but still moved as is; It could be used for field types such as image and file 
-
+4. Skip: should be skipped for translation, but still moved as is; It could be used for field types such as image and file
 
 <br/><br/>
 
 ## 🖐 Requirements
 
-The requirements to install the Stripe Translator plugin is the same as those to install Strapi.
+The requirements to install the Translator plugin is the same as those to install Strapi.
 
 Please refer to the official Strapi installation requirement doc here: [Installation Requirements](https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html).
 
@@ -161,4 +163,3 @@ You can easily configure the Stripe Translator plugin.
 [MIT License](LICENSE.md)
 
 Copyright © 2021 [AsyncWeb Technology](https://higheredlab.com/)
-
