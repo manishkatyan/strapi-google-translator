@@ -160,5 +160,5 @@ You can easily configure the Stripe Translator plugin.
 
 [MIT License](LICENSE.md)
 
-Copyright © 2021 AsyncWeb Technology (https://higheredlab.com/)
+Copyright © 2021 [AsyncWeb Technology](https://higheredlab.com/)
 
