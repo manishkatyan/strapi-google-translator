@@ -21,13 +21,19 @@
 
 ## Google Cloud Translate
 
-[Google Cloud Translate](https://cloud.google.com/translate) Make your content and apps multilingual with fast, dynamic machine translation.
+[Google Cloud Translate](https://cloud.google.com/translate) makes your content multilingual with fast, dynamic machine translation.
 
-Why should you bother translating your content? Well, here are some key benefits: 
+Why should you bother translating your content? Well, there are several reasons for you to translate your content: 
 
 1. Reach global markets through internationalization of your products
 2. Engage your audience with compelling localization of your content
 3. Deliver seamless user experience with real-time translation
+
+### Google Cloud Translate Benefits:
+
+- Unparalleled language support: Use machine translation to detect more than one hundred languages, from Afrikaans to Zulu. Build custom models in more than fifty language pairs using our no-code AutoML technology.
+- Best-in-class quality: Google has a rich history of providing translation services to consumers and organizations. Our proven models and tools bring Google’s translation expertise with industry-leading accuracy.
+- Domain specificity: Customize our translation services to understand industry slang, or domain-specific terms. Maintain the context and meaning in translations of technical documents, product descriptions, and social content.
 
 [Strapi](https://strapi.io/) is the leading open-source headless Content Management System. It’s 100% JavaScript, fully customizable and developer-first.
 
