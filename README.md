@@ -58,6 +58,16 @@ Setting up the plugin is super easy and can be completed within 10 minutes.
 1. Easily translate your content to 100+ languages.
 1. Confugurable translation strategy schema for each field of a given content type.
 
+### Translation Strategies
+
+Following are the supported translation strategies: 
+
+1. String: translated as simple string, Glossary should work
+2. Text: translated as simple string, Glossary should work
+3. HTML: should be transformed to html first, translated and then converted back to markdown. Glossary should work.
+4. Skip: should be skipped for translation, but still moved as is; It could be used for field types such as image and file 
+
+
 <br/><br/>
 
 ## 🖐 Requirements
