@@ -63,7 +63,7 @@ We are following the [official Node.js releases timelines](https://nodejs.org/en
 
 - Strapi V4.4.5 (recently tested)
 
-> The Stripe Payments plugin is designed for **Strapi v4.x**. It won't work with Strapi v3.x.
+> The translator plugin is designed for **Strapi v4.x**. It won't work with Strapi v3.x.
 
 <br/><br/>
 
