@@ -1,5 +1,5 @@
-<h1 align="center">Translator</h1>
-<p align="center">Easily translate your Strapi collections into multiple languages. It can easily be extedned to support relations and components.</p>
+<h1 align="center">Strapi Translator</h1>
+<p align="center">Easily translate your Strapi collections into multiple languages using Google Cloud Translate. It can easily be extedned to support relations and components.</p>
 
 <br />
 
