@@ -1,5 +1,5 @@
 <h1 align="center">Strapi Translator</h1>
-<p align="center">Easily translate your Strapi collections into multiple languages using Google Cloud Translate.</p>
+<p align="center">Easily translate your Strapi collections into 100+ languages using Google Cloud Translate.</p>
 
 <p align="center">With the click of a button, this free plugin translates your content into 100+ languages using Google Cloud Translate. Moeover, you can easily extend this plugin to support nested relations and components in Strapi.</p>
 
@@ -39,30 +39,30 @@ Why should you bother translating your content? Well, there are several reasons 
 
 [Strapi](https://strapi.io/) is the leading open-source headless Content Management System. It’s 100% JavaScript, fully customizable and developer-first.
 
-## Overview: Start your Content Translation
+## Overview: Easily translate your content
 
-Translator plugin enables you to translate your Strapi content into multiple languages.
+Translator plugin enables you to translate your Strapi content into 100+ languages.
 
 Setting up the plugin is super easy and can be completed within 10 minutes.
 
 1. Enter your enviornment variables in `.env` file.
-2. Add the list of languages you want in strapi setting.
-3. Enable localization for the content type you want to translate.
-4. Go to content manager select the collection type you want to translate,select language and click on translate.
+2. Add the list of languages, that you want to translate into, in Strapi Settings.
+3. Enable localization for the content type that you want to translate.
+4. Go to Content Manager, select the collection type that you want to translate, select the languages and click on `translate`.
 
 <br/><br/>
 
 ## ✨ Features
 
 1. Quick installation and setup.
-1. Easily translate your content to other languages.
-1. Able to configure translation strategy schema for each field of the particular content type.
+1. Easily translate your content to 100+ languages.
+1. Confugurable translation strategy schema for each field of a given content type.
 
 <br/><br/>
 
 ## 🖐 Requirements
 
-The requirements to install the Stripe Payments plugin is the same as those to install Strapi.
+The requirements to install the Stripe Translator plugin is the same as those to install Strapi.
 
 Please refer to the official Strapi installation requirement doc here: [Installation Requirements](https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html).
 
@@ -77,7 +77,7 @@ We are following the [official Node.js releases timelines](https://nodejs.org/en
 
 - Strapi V4.4.5 (recently tested)
 
-> The translator plugin is designed for **Strapi v4.x**. It won't work with Strapi v3.x.
+> The Translator plugin is designed for **Strapi v4.x**. It won't work with Strapi v3.x.
 
 <br/><br/>
 
@@ -99,12 +99,11 @@ STRAPI_GOOGLE_TRANSLATE_API_TOKEN=your strapi api token
 GOOGLE_TRANSLATE_JSON={"type":"service_account","project_id":"your project_id","private_key_id":"your private key id","private_key":"-----BEGIN PRIVATE KEY-----\your private key\n-----END PRIVATE KEY-----\n","client_email": "your client email","client_id": "your client id","auth_uri": "your auth uri","token_uri": "your token uri","auth_provider_x509_cert_url": "your provider secret","client_x509_cert_url": "your client"}
 ```
 
-> Please make sure to add your google translate json in one line as shown above.
+> Please make sure to add your Google Service Account JSON in a single sentence as shown above.
 
-> Also to create strapi api token, Go to settingd &gt; API Tokens &gt; Create new Api Tokens &gt; enter api name, select token duration `Unlimited` , select Token type `Full Access` &gt; save &gt; copy the api token and add in your `.env` file.
+> Also to create Strapi api token, Go to Settingd &gt; API Tokens &gt; Create new Api Tokens &gt; Enter API name, Select Token duration `Unlimited` , Select Token type `Full Access` &gt; Save &gt; Copy the API Token and Add in your `.env` file.
 
-After adding enviornment variables `.env` files.
-Goto config &gt; `plugins.js` &gt; add the following code snippet.
+After adding enviornment variables `.env` files, goto Config &gt; `plugins.js` &gt; Add the following code snippet.
 
 ```
 module.exports = ({ env }) => ({
@@ -121,7 +120,7 @@ module.exports = ({ env }) => ({
 
 ```
 
-After you would need to build a fresh package that includes the Google Translate plugin UI. Execute the commands below:
+Afterwards, you would need to build a fresh package that includes the Translator plugin. For it, please execute the commands below:
 
 ```bash
 # with npm (option 1)
@@ -133,15 +132,13 @@ $ npx strapi  build
 $ npx strapi  develop
 ```
 
-The ** Translator** plugin should appear in the **Plugins** section of the Strapi sidebar after you run the app again.
-
-Now you are ready to accept online payments via Stripe on your Strapi website 🎉
+The Translator plugin should appear in the **Plugins** section of the Strapi sidebar after you run the app again.
 
 <br/><br/>
 
 ## 🔧 Configuration
 
-You can easily configure the Stripe Payments plugin to connect with your Stripe Account.
+You can easily configure the Stripe Translator plugin.
 
 - Go to `setting -> Translator -> Configuration`.
 - On the configuration page, you can select translation strategy for each field.
