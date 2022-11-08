@@ -1,6 +1,6 @@
 {
   "name": "strapi-google-translator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Easily translate your Strapi content into 100+ languages.",
   "strapi": {
     "name": "strapi-google-translator",
@@ -41,7 +41,8 @@
     "headless CMS",
     "open-source",
     "subscribe",
-    "gateway"
+    "gateway",
+    "internationalization"
   ],
   "license": "MIT"
 }
