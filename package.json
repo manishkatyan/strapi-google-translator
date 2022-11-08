@@ -1,10 +1,10 @@
 {
   "name": "strapi-google-translator",
-  "version": "1.0.3",
-  "description": "Easily translate Strapi collections using Google Cloud Translate. Supports Glossaries, relations and components.",
+  "version": "1.0.4",
+  "description": "Easily translate your Strapi content into 100+ languages.",
   "strapi": {
     "name": "strapi-google-translator",
-    "description": "Easily translate Strapi collections using Google Cloud Translate. Supports Glossaries, relations and components.",
+    "description": "Easily translate your Strapi content into 100+ languages.",
     "kind": "plugin",
     "displayName": "Strapi Google Translator"
   },
@@ -33,13 +33,12 @@
     "npm": ">=6.0.0"
   },
   "keywords": [
-    "translator",
     "translate",
-    "google translator",
+    "i18n",
+    "multi-lingual",
     "google cloud translate",
     "strapi",
     "headless CMS",
-    "secure payment",
     "open-source",
     "subscribe",
     "gateway"
