@@ -19,9 +19,15 @@
 
 <br/><br/>
 
-## Translator plugin for Strapi
+## Google Cloud Translate
 
 [Google Cloud Translate](https://cloud.google.com/translate) Make your content and apps multilingual with fast, dynamic machine translation.
+
+Why should you bother translating your content? Well, here are some key benefits: 
+
+1. Reach global markets through internationalization of your products
+2. Engage your audience with compelling localization of your content
+3. Deliver seamless user experience with real-time translation
 
 [Strapi](https://strapi.io/) is the leading open-source headless Content Management System. It’s 100% JavaScript, fully customizable and developer-first.
 
