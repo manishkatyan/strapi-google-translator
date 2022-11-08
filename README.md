@@ -1,7 +1,7 @@
 <h1 align="center">Strapi Translator</h1>
 <p align="center">Easily translate your Strapi collections into multiple languages using Google Cloud Translate.</p>
 
-<p>This free plugin enables you to translate your content into 100+ languages using Google Cloud Translate. Moeover, you can easily extend this plugin to support relations and components in Strapi.</p>
+<p align="center">This free plugin enables you to translate your content into 100+ languages using Google Cloud Translate. Moeover, you can easily extend this plugin to support relations and components in Strapi.</p>
 
 <br />
 
