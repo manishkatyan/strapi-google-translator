@@ -1,7 +1,7 @@
 <h1 align="center">Strapi Translator</h1>
-<p align="center">Easily translate your Strapi collections into 100+ languages.</p>
+<p align="center">Easily translate your Strapi content into 100+ languages.</p>
 
-<p align="center">With the click of a button, this free plugin translates your content into 100+ languages using Google Cloud Translate. Moeover, you can easily extend this plugin to support nested relations and components in Strapi.</p>
+<p align="center">With the click of a button, this free plugin translates your Strapi collections into 100+ languages using Google Cloud Translate. It supports multiple translation strategies including Text, HTML, String and Skip. In addition, you can specify Glossaries, such as brand name, that should not get translated.</p>
 
 <br />
 
