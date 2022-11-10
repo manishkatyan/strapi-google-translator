@@ -1,6 +1,6 @@
 {
   "name": "strapi-google-translator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Easily translate your Strapi content into 100+ languages.",
   "strapi": {
     "name": "strapi-google-translator",
@@ -12,6 +12,9 @@
     "@google-cloud/translate": "^7.0.3",
     "lodash": "^4.17.21",
     "react-ace": "^10.1.0"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "4.4.5"
   },
   "author": {
     "name": "AsyncWeb Technology",
