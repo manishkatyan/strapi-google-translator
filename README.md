@@ -15,7 +15,8 @@
 <a href="https://www.npmjs.org/package/strapi-google-translator">
 <img src="https://img.shields.io/npm/dm/strapi-google-translator.svg" alt="Monthly download on NPM" />
 </a>
-
+<a href="https://snyk.io/test/github/manishkatyan/strapi-google-translator">
+<img src="https://snyk.io/test/github/manishkatyan/strapi-google-translator/badge.svg" alt="synk" />
 </p>
 
 <br>
