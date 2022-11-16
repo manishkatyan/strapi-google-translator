@@ -1,6 +1,6 @@
 {
   "name": "strapi-google-translator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easily translate your Strapi content into 100+ languages.",
   "strapi": {
     "name": "strapi-google-translator",
@@ -9,7 +9,7 @@
     "displayName": "Strapi Google Translator"
   },
   "dependencies": {
-    "@google-cloud/translate": "^7.0.3",
+    "@google-cloud/translate": "^7.0.4",
     "lodash": "^4.17.21",
     "react-ace": "^10.1.0"
   },
