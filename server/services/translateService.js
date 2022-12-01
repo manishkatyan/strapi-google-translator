@@ -82,7 +82,7 @@ module.exports = ({ strapi }) => ({
       return {
         status: 200,
         created: true,
-        message: "Translated SuccessFully!",
+        message: "Translation was successful",
       };
     } catch (error) {
       console.error(error);
@@ -102,7 +102,7 @@ module.exports = ({ strapi }) => ({
 
     // if (!translatorSetting.apiKey)
     //   throw new ApplicationError(
-    //     `Deepl api key is required. please configure in translator setting page : ${error.message} `
+    //     `Please configure a valid API key for Google Translator in the .env file of your Strapi project : ${error.message} `
     //   );
 
     return { translatorSetting, strapiSetting };
