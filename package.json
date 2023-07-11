@@ -9,7 +9,7 @@
     "displayName": "Strapi Google Translator"
   },
   "dependencies": {
-    "@google-cloud/translate": "^6.3.1",
+    "@google-cloud/translate": "^7.0.0",
     "lodash": "^4.17.21",
     "react-ace": "^10.1.0"
   },
