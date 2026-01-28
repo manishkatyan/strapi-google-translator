@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@google-cloud/translate": "^6.3.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "react-ace": "^10.1.0"
   },
   "peerDependencies": {
